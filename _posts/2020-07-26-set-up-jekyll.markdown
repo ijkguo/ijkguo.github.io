@@ -5,6 +5,8 @@ date:   2020-07-26 17:17:41 -0700
 categories: jekyll
 ---
 
+Jekyll is a Ruby tool to render static website from a Markdown code repository. It can be hosted on GitHub Pages on a custom domain with HTTPS enabled.
+
 ## Create the repo
 
 Source: [Creating a GitHub Pages site with Jekyll](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site-with-jekyll)
@@ -17,7 +19,7 @@ Source: [Creating a GitHub Pages site with Jekyll](https://docs.github.com/en/gi
 
 1. (repo index) Code -> Environments -> "github-pages" will link to "Deployments / Activity log" where we can see continuous build and roll out status. The documentation described changes to be effective within 20 minutes, and failures are handled by emails. But this is an up-to-date deployment status.
 
-## Setting up Jekyll correctly
+## Set up Jekyll
 
 Source: [Quickstart Jekyll](https://jekyllrb.com/docs/)
 
@@ -58,11 +60,9 @@ Source: [Managing a custom domain for your GitHub Pages site](https://docs.githu
 
 1. Set up synthetic record forwarding `ijkguo.com` to `www.ijkguo.com` with 302 temporary direct, forward path, and SSL disabled as described in [stackoverflow](https://webmasters.stackexchange.com/questions/85519/can-i-configure-google-domains-to-redirect-a-bare-domain-to-a-subdomain-over-htt). Use `dig ijkguo.com +nostats +nocomments +nocmd` to verify the A records automatically populated. Apex (root) domain cannot have CNAME, so A records should be generated. Visit http://ijkguo.com/ to verify the redirect.
 
-## Enable TLS on custom domain.
+## Enable TLS on custom domain
 
 Source: [Securing your GitHub Pages site with HTTPS](https://docs.github.com/en/github/working-with-github-pages/securing-your-github-pages-site-with-https)
-
-Modern browser sometimes reject HTTP-only traffic.
 
 1. (repo index) Settings -> Options -> GitHub Pages. Enable Enforce HTTPS and wait for TLS certificate generation. Visit https://www.ijkguo.com/ to verify.
 
