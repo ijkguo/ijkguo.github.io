@@ -10,3 +10,4 @@ Based on:
 * [GitHub Pages](https://pages.github.com)
 * [jekyll](https://github.com/jekyll/jekyll)
 * [minima](https://github.com/jekyll/minima)
+* [Apache.org privacy policy](http://apache.org/foundation/policies/privacy.html)
